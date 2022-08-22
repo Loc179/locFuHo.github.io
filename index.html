@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            margin:0 auto;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        p{
+            line-height: 100px;
+        }
+
+        .header{
+            width: 100%;
+            height: 45px;
+            background-color: black;
+        }
+
+        li{
+            display: inline-block;
+            height: 45px;
+            width: 70px;
+        }
+        li>a{
+            text-align: center;
+            display: block;
+            height: 100%;
+            width: 100%;
+            line-height: 45px;
+            text-decoration: none;
+            color: white;
+            
+        }
+
+        li>a:hover{
+            background-color: #ccc;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <!--<h1 style="color: red; font-size: 50px;">Hello world</h1>
+    <p>My name is Loc</p>
+    <div class="box">
+        <p>hello</p>
+    </div>-->
+    <div class="main">
+        <div class="header">
+           <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">Trang1</a></li>
+             <li><a href="#">Trang2</a></li>
+             <li><a class="lol" href="#">loc</a></li>
+           </ul>
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.lol').onclick=()=>{
+            document.querySelector('.content').innerHTML='loc dz';
+        }
+    </script>
+   
+</body>
+</html>
